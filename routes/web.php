@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\BookController;
 
 
 /*
@@ -22,3 +23,7 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/movies', [MovieController::class, 'index'])->name('movies.index');
 
 Route::get('/movies/{id}', [MovieController::class, 'show'])->name('movies.show');
+
+Route::get('/books', [BookController::class, 'index'])->name('books.index');
+
+Route::get('/books/{id}', [BookController::class, 'show'])->name('books.show');
