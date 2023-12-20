@@ -3,8 +3,6 @@
 @section('title', 'Home')
 
 @section('content')
-<main>
-    <h1>Homepage</h1>
-</main>
+<h1 class="text-center">WELCOME TO THE SHOP</h1>
 
 @endsection
